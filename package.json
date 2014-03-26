@@ -1,0 +1,27 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "description": "Club Wars @ ESPOL",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node web.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "keywords": [
+    "Heroku",
+    "Node",
+	"ESPOL",
+	"Club Wars",
+	"TAWS"
+  ],
+  "dependencies": {
+    "express": "3.4.8",
+    "ejs": "0.8.5",
+    "socket.io": "0.9.13"
+  },
+  "author": "TAWS",
+  "license": "BSD"
+}

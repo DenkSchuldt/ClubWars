@@ -1,0 +1,60 @@
+#clubwars-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: none;
+}
+
+#clubwars-content header{
+	width: 100%;
+	color: #ff6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ff6;
+	position: fixed;
+	top: 0;
+	background-color: black;
+}
+#clubwars-content header label{
+	font-size: 2.5em;
+	padding: 20px;
+}
+#clubwars-content header img{
+	float: right;
+	width: 50px;
+	height: 50px;
+	padding-right: 20px;
+	vertical-align: middle;
+}
+
+#clubwars-content section{
+	display: block;
+	width: 90%;
+	margin-top: 100px;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: block;
+}
+#clubwars-content section article{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#clubwars-content footer{
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ff6;
+	background-color: black;
+}
+
+#clubwars-content footer #social{ float: left}
+#clubwars-content footer #powered{ float: right }
+#clubwars-content footer img{
+	width: 60px;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+#clubwars-content footer #social img{width: 40px}
