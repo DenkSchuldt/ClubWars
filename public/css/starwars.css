@@ -6,7 +6,8 @@ body, html{
 	font-family: "Droid Sans", arial, verdana, sans-serif;
 	font-weight: 700;
 	color: #ff6;
-	background-color: #000;
+	/*background-color: #000;*/
+	background-image: url('../images/fondo.png');
 	overflow: hidden;
 }
 
@@ -144,11 +145,11 @@ h1 sub{
 	right: 0;
 	top: 0;
 	bottom: 60%;
-	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	/*background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);*/
 	pointer-events: none;
 }
 
@@ -174,6 +175,9 @@ h1 sub{
 	-ms-animation: scroll 50s linear 6.5s infinite;
 	-o-animation: scroll 50s linear 6.5s infinite;
 	animation: scroll 50s linear 6.5s infinite;
+}
+#starwars-content{
+
 }
 
 /* animation */
