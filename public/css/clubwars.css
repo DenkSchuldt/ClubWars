@@ -1,10 +1,11 @@
+
 #clubwars-content{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	display: none;
-	background-color: white;
+	z-index: 100;
 }
 
 #clubwars-content header{
@@ -16,42 +17,60 @@
 	position: fixed;
 	top: 0;
 	background-color: black;
+	z-index: 10;
 }
 #clubwars-content header label{
 	font-size: 2.5em;
 	padding: 20px;
 }
 #clubwars-content header img{
-	float: right;
-	width: 50px;
-	height: 50px;
+	float: right;	
+	height: 40px;
+	margin-top: 5px;
 	padding-right: 20px;
 	vertical-align: middle;
 }
 
 #clubwars-content section{
-	display: block;
+	display: inline-block;
+	position: relative;
 	width: 90%;
 	margin-top: 100px;
 	padding-left: 5%;
 	padding-right: 5%;
-	display: block;
 }
 #clubwars-content section article{
 	margin-top: 50px;
 	margin-bottom: 50px;
+	width: 90%;
+	margin-left: 3%;
+	padding-left: 2%;
+	background-color: rgba(0,0,0,0.7);
 }
+#clubwars-content section article h2{
+	display: block;
+	font-size: 2.5em;
+	padding-bottom: 10px;
+}
+#clubwars-content section article p{
+	font-size: 1.5em;
+	color: lightgray;
+	text-align: justify;
+}
+#clubwars-content section article a{color:#4ee; text-decoration:none}
 
 #clubwars-content footer{
-	display: block;
+	display: inline-block;
+	position: relative;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-top: 1px solid #ff6;
 	background-color: black;
 }
-
-#clubwars-content footer #social{ float: left}
+#clubwars-content footer ul{ list-style-type:none }
+#clubwars-content footer ul li{ margin-bottom: 5px; }
+#clubwars-content footer #social{ float: left }
 #clubwars-content footer #powered{ float: right }
 #clubwars-content footer img{
 	width: 60px;
@@ -60,3 +79,28 @@
 	vertical-align: middle;
 }
 #clubwars-content footer #social img{width: 40px}
+#skip{
+    position: fixed;
+	float: right;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+	top: 50px;
+	right: 40px;
+    font-size: 15px;
+    color: #ff6;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #000;
+    border: 2px solid #ff6;
+    border-radius: 35px;
+    cursor: pointer;
+}
+#clubwars-content iframe{
+	margin-top: 30px;
+	width: 500px;
+	height: 500px;
+	border-radius: 250px;
+	text-align: center;
+	background-color: white;
+}

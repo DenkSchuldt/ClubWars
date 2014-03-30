@@ -2,13 +2,18 @@
 	<html lang="en"><head>
 		<meta charset="UTF-8">
 		<title>Club Wars!</title>
-		<link href="./css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./css/starwars.css">
 		<link rel="stylesheet" type="text/css" href="./css/clubwars.css">
-		 
+		<link rel="stylesheet" type="text/css" href="css/galaxy.css" media="all" />
 	</head>
 	<body>
+		<div id="galaxy">
+			<div class="stars-back"></div>
+			<div class="stars-middle"></div>
+			<div class="stars-front"></div>
+		</div>
 		<div id="starwars-content">
+			<button id="skip">Saltar Intro</button>
 			<p id="start">Dentro de poco tiempo, en una Universidad muy, muy importante...</p>
 			<h1>
 				CLUB WARS
@@ -20,72 +25,81 @@
 						EPISODIO I
 						<br>2014 - Termino I
 					</p>	
-					<p>Es un evento unico.</p>	
-					<p>Es un evento de caracter masivo dirigido a mas de 1000 estudiantes de la ESPOL, donde se realizaran actividades de manera interactiva con el objetivo de orientarlos hacia una vida profesional mas alla del estudio, involucrandolos con el entorno a traves de clubes estudiantiles.</p>					
+					<p>Es un evento &uacute;nico.</p>	
+					<p>Es un evento de car&aacute;cter masivo dirigido a m&aacute;s de 1000 estudiantes de la ESPOL, donde se realizar&aacute;n actividades de manera interactiva con el objetivo de orientarlos hacia una vida profesional m&aacute;s all&aacute; del estudio, involucr&aacute;ndolos con el entorno a trav&eacute;s de clubes estudiantiles.</p>
 				</div>
 			</div>
 		</div>
 		<div id="clubwars-content">
-			<header>
-					<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				      <div class="container">
-				        <div class="navbar-header">
-				          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				            <span class="sr-only">Toggle navigation</span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				          </button>
-				          <a class="navbar-brand" href="#">Club Wars</a>
-				        </div>
-				        <div class="collapse navbar-collapse">
-				          <ul class="nav navbar-nav">
-				            <li class="active"><a href="#">Participantes</a></li>
-				            <li><a href="#about">Auspiciantes</a></li>
-				            <li><a href="#contact">Contact</a></li>
-				          </ul>
-					          <div class="navbar-right" >
-					        	<a href="http://www.espol.edu.ec/" target="_blank"><img src="./images/espol.png" alt="espol"></a>
-					          </div>
-				        </div><!--/.nav-collapse -->
-				      </div>
-				    </div>				
-			</header>
-			 <div class="container">
-					<section>
-						<article>
-							<h2>Clubes participantes</h2>
-							<p>Robota</p>
-							<p>TAWS</p>
-							<p>Club de Emprendedores</p>
-							<p>Tweening</p>
-							<p>Club de Fotografia</p>
-							<p>Celula Estudiantil Microsoft</p>
-							<p>IIE Espol</p>
-							<p>Accion Cultural Politecnica</p>
-							<p>ASME ESPOL</p>
-						</article>
-					</section>
-			</div>
-			<div id="footer">
-      			<div class="container">
-					<footer>
-						<div id="social">
-							<ul>
-								<li>
-									<a href="https://www.facebook.com/pages/Club-Wars/678065725579680" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
-									<label>Club Wars</label>
-								</li>
-							</ul>
-						</div>
-						<div id="powered">
-							<label>Powered by: </label>
-							<a href="http://www.taws.espol.edu.ec/" target="_blank"><img src="./images/powered.png" alt="taws"></a>
-						</div>
-					</footer>
-				</div>
-			</div>
-		</div>
+ 			<header>
+ 				<label>Club Wars</label>
+ 				<a href="http://www.espol.edu.ec/" target="_blank"><img src="./images/espol.png" alt="espol"></a>
+ 			</header>
+ 			<section>
+				<article>
+					<h2>&iquest;Qu&eacute; es CLUB WARS?</h2>
+					<p>"CLUB WARS" ESPOL es un evento masivo, dirigido a los novatos, con el objetivo de orientarlos hacia una vida profesional m&aacute;s all&aacute; del estudio, involucr&aacute;ndolos con el entorno a trav&eacute;s de clubes estudiantiles.</p>
+				</article>
+				<article>
+					<h2>&iquest;En qu&eacute; consiste?</h2>
+					<p>Los novatos tendr&aacute;n que hacer equipos de 10 personas guiados durante toda la jornada por un sensei. El equipo debe realizar diferentes actividades l&uacute;dicas-interactivas en dos horas treinta minutos, conociendo as&iacute; la importancia de pertenecer a clubes estudiantiles.</p>
+				</article>
+				<article>
+					<h2>&iquest;Qui&eacute;nes participaran?</h2>
+					<p>En este evento participaran los alumnos novatos del primer t&eacute;rmino 2014 y los senseyes que se inscriban en el siguiente enlace: <a href="https://eventioz.com.ar/e/club-wars/registrations/new" target="_blank">Club Wars - Registro<a></p>
+				</article>
+				<article>
+					<h2>&iquest;Qu&eacute; Clubes participaran del evento?</h2>
+					<p>Tenemos un total de 15 clubes confirmados para este gran evento a realizarse y son:</p>
+						<p>1.	Robota</p>
+						<p>2.	Taws</p>
+						<p>3.	Club de Emprendedores</p>
+						<p>4.	Tweening</p>
+						<p>5.	Club de Fotograf&iacute;a</p>
+						<p>6.	C&eacute;lula Estudiantil Microsoft-Espol</p>
+						<p>7.	Rama Estudiantil IIE</p>
+						<p>8.	Acci&oacute;n Cultural Polit&eacute;cnica</p>
+						<p>9.	Rama Estudiantil ASME</p>
+						<p>10.	Rama Estudiantil INECYC</p>
+						<p>11.	Rama Estudiantil ASHRAE</p>
+						<p>12.	Acci&oacute;n Universitaria</p>
+						<p>13.	Club de Videojuegos</p>
+						<p>14.	Grupo de Teatro ESPOL</p>
+						<p>15.	Club KOKOA</p>
+				</article>
+				<article>
+					<h2>&iquest;En qu&eacute; horarios se realizara el evento?</h2>
+					<p>El evento se realizara en los siguientes horarios:</p>
+					<p>Jornada  A: 8:00-10:30,</p>
+					<p>Jornada  B: 11:00-13:30, y</p>
+					<p>Jornada C: 15:00-17:30</p>
+					<p><strong>Nota:</strong> Los  senseyes tienen la posibilidad de elegir el horario de conveniencia.</p>
+				</article>
+				<article>
+					<h2>&iquest;D&oacute;nde?</h2>
+					<p>El evento se realizara en el edificio nuevo de la Facultad de Ingenier&iacute;a en Electricidad y Computaci&oacute;n (FIEC), ubicado en el Campus Gustavo Galindo de la Escuela Superior Polit&eacute;cnica del Litoral (ESPOL)</p>
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://mapsengine.google.com/map/edit?mid=zmJDQ7MKVDdg.kfnFzesNr7Oo"></iframe>
+				</article>
+ 			</section>
+ 			<footer>
+ 				<div id="social">
+ 					<ul>
+ 						<li>
+ 							<a href="https://www.facebook.com/pages/Club-Wars/678065725579680" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
+ 							<label>Club Wars</label>
+ 						</li>
+						<li>
+ 							<a href="https://www.twitter.com/club_wars" target="_blank"><img src="./images/twitter.png" alt="twitter"></a>
+ 							<label>@club_wars</label>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 				<div id="powered">
+ 					<label>Powered by: </label>
+ 					<a href="http://www.taws.espol.edu.ec/" target="_blank"><img src="./images/powered.png" alt="taws"></a>
+ 				</div>
+ 			</footer>
+ 		</div>
 		<script src="./js/jquery-2.0.3.min.js"></script>
 		<script src="./js/functions.js"></script>
 	</body>
