@@ -47,6 +47,12 @@
 	padding-left: 2%;
 	background-color: rgba(0,0,0,0.7);
 }
+#clubwars-content section article img{
+	width: 23%; 
+	display: inline-block;
+	margin: 1%;
+	vertical-align: middle;
+}
 #clubwars-content section article h2{
 	display: block;
 	font-size: 2.5em;
@@ -103,4 +109,25 @@
 	border-radius: 250px;
 	text-align: center;
 	background-color: white;
+}
+#location{
+	width: 100%;
+	text-align:center;
+}
+#location iframe{background-color: black}
+
+.jornada{
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+	padding: 0.5%;
+	background-color: #3bb;
+	text-align: center;
+	font-size: 2em;
+	background-color: rgba(255,0,0,0.6);
+	color: white;
+}
+.jornada label{
+	display:block;
+	font-size: 0.8em;
 }
