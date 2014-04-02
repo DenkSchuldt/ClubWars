@@ -1,10 +1,47 @@
 #clubwars-content{
+  min-height: 2000px;
+  padding-top: 70px;
+}
+/*#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #101010;
+}*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  background-color: #101010;
+}
+.destacados{
+    padding: 20px 0;
+	text-align: center;
+}
+.destacados > div > div{
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+.destacados > div:hover > div{
+	margin-top: -10px;
+	border: 1px solid rgb(200, 200, 200);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+	background: rgba(200, 200, 200, 0.1);
+	transition: 0.5s;
+}
+
+/*#clubwars-content{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	display: none;
-	background-color: white;
+	background-color: #404040;
 }
 
 #clubwars-content header{
@@ -23,13 +60,12 @@
 }
 #clubwars-content header img{
 	float: right;
-	width: 50px;
-	height: 50px;
+	width: 70px;
 	padding-right: 20px;
 	vertical-align: middle;
-}
+}*/
 
-#clubwars-content section{
+/*#clubwars-content section{
 	display: block;
 	width: 90%;
 	margin-top: 100px;
@@ -41,6 +77,8 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+
 
 #clubwars-content footer{
 	display: block;
@@ -60,3 +98,11 @@
 	vertical-align: middle;
 }
 #clubwars-content footer #social img{width: 40px}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  Set the fixed height of the footer here 
+  height: 60px;
+  background-color: #000;
+}*/

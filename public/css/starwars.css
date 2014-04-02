@@ -11,7 +11,7 @@ body, html{
 	overflow: hidden;
 }
 
-p#start{
+#starwars-content p #start{
 	position: relative;
 	width: 16em;
 	font-size: 200%;
@@ -57,7 +57,7 @@ p#start{
 	100% { opacity: 0; }
 }
 
-h1{
+#starwars-content h1{
 	position: absolute;
 	width: 2.6em;
 	left: 50%;
@@ -78,7 +78,7 @@ h1{
 	animation: logo 5s ease-out 3.5;
 }
 
-h1 sub{
+#starwars-content h1 sub{
 	display: block;
 	font-size: 0.3em;
 	letter-spacing: 0;

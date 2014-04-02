@@ -1,0 +1,19 @@
+<div id="footer">
+      			<div class="container">
+      				<div class="row">
+      					<div class="col-md-4"><!--Tira de redes sociales-->
+      						<ul>
+								<li>
+									<label>Club Wars</label>
+								</li>
+							</ul>
+      					</div>
+      					<div class="col-md-4"><!--Universidad-->
+      					<span>Escuela Superior Polit&eacute;cnica del Litoral</span>
+      					</div>
+      					<div class="col-md-4"><!--Desarrollado por-->
+      						<label>Powered by: </label>
+      					</div>
+      				</div>
+				</div>
+			</div>
