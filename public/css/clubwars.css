@@ -30,7 +30,12 @@
 	padding-right: 20px;
 	vertical-align: middle;
 }
-
+#clubes{
+	width:100%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 30px;
+}
 #clubwars-content section{
 	display: inline-block;
 	position: relative;
@@ -114,7 +119,11 @@
 	width: 100%;
 	text-align:center;
 }
-#location iframe{background-color: black}
+#location iframe{
+	background-color: black;
+	width: 600px;
+	height: 450px;
+}
 
 .jornada{
 	display: inline-block;
@@ -131,3 +140,35 @@
 	display:block;
 	font-size: 0.8em;
 }
+#clubes .small{width: 15%;}
+
+/*Styles for screen 540px and lower*/
+	@media only screen and (max-width : 540px){
+		#starwars-content{display:none}
+		#clubwars-content{display:block}
+		body{overflow-y:visible}
+		#clubwars-content section article img{
+			width: 40%;
+			margin: 2%;
+		}
+		#clubes .small{width: 23.5%;}
+		.jornada{ width: 100% }
+		#location{
+			width: 90%;
+			margin-left: 5%;
+		}
+		#location iframe{
+			width: 100%;
+			height: 330px;
+		}
+		#clubwars-content footer{text-align:center}
+		#clubwars-content footer ul li{display:inline-block}
+		#clubwars-content footer #social{
+			float: inherit;
+			display: block;
+		}
+		#clubwars-content footer #powered{
+			float: inherit;	
+			display: block;
+		}
+	}

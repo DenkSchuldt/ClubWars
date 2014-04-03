@@ -14,8 +14,7 @@ function newPage(){
 	$("#starwars-content").fadeOut('slow', function(){
 		$("#starwars-content").remove();
 		$("#clubwars-content").fadeIn('slow');
-		$("body").css("overflow-y","visible");
-		
+		$("body").css("overflow-y","visible");		
 	});
 }
 
