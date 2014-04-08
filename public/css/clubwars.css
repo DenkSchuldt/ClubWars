@@ -2,6 +2,37 @@
   min-height: 2000px;
   padding-top: 70px;
 }
+#principal {
+	position: fixed;
+	width: inherit;
+	background-color: rgba(150, 150, 132, 0.5);
+	border-radius: 0px;
+	border-color: transparent;
+}
+#participantes{
+	position: fixed;
+	background-color: rgba(150, 150, 132, 0.5);
+	border-radius: 0px;
+	width: 85%;
+	border-color: transparent;
+}
+#skip{
+    position: fixed;
+	float: right;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+	top: 50px;
+	right: 40px;
+    font-size: 15px;
+    color: #ff6;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #000;
+    border: 2px solid #ff6;
+    border-radius: 35px;
+    cursor: pointer;
+}
 /*#footer {
   position: absolute;
   bottom: 0;
@@ -9,32 +40,76 @@
   height: 60px;
   background-color: #101010;
 }*/
-#footer {
+#participantes img{
+	width: 100px;
+	height: 100px;h
+}
+#clubwars-content #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 70px;
   background-color: #101010;
 }
-.destacados{
-    padding: 20px 0;
+#clubwars-content .destacados{
+	padding: 5px;
 	text-align: center;
 }
-.destacados > div > div{
+/* Buzz */
+@-webkit-keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.buzz {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz:hover, .buzz:focus, .buzz:active {
+  -webkit-animation-name: buzz;
+  animation-name: buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/*
+#clubwars-content .destacados > div > div{
 	padding: 10px;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	transition: 0.2s;
 }
-.destacados > div:hover > div{
+#clubwars-content .destacados > div:hover > div{
 	margin-top: -10px;
 	border: 1px solid rgb(200, 200, 200);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
 	background: rgba(200, 200, 200, 0.1);
 	transition: 0.5s;
 }
-
 /*#clubwars-content{
 	margin: 0;
 	padding: 0;

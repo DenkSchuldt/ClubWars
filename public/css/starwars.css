@@ -1,17 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 * { padding: 0; margin: 0; }
+
 body, html{
 	width: 100%;
 	height: 100%;
 	font-family: "Droid Sans", arial, verdana, sans-serif;
 	font-weight: 700;
 	color: #ff6;
-	/*background-color: #000;*/
-	background-image: url('../images/fondo.png');
-	overflow: hidden;
+	background-color:black;
+	overflow:hidden;
 }
+body{overflow: hidden}
 
-#starwars-content p #start{
+#starwars-content p#start{
 	position: relative;
 	width: 16em;
 	font-size: 200%;
@@ -116,7 +117,7 @@ body, html{
 }
 
 /* the interesting 3D scrolling stuff */
-#titles{
+#starwars-content #titles{
 	position: absolute;
 	width: 18em;
 	height: 35em;
@@ -138,7 +139,7 @@ body, html{
 	transform: perspective(300px) rotateX(25deg);
 }
 
-#titles:after{
+#starwars-content #titles:after{
 	position: absolute;
 	content: ' ';
 	left: 0;
@@ -153,21 +154,21 @@ body, html{
 	pointer-events: none;
 }
 
-#titles p{
+#starwars-content #titles p{
 	text-align: justify;
 	margin: 0.8em 0;
 }
 
-#titles p.center{
+#starwars-content #titles p.center{
 	text-align: center;
 }
 
-#titles a{
+#starwars-content #titles a{
 	color: #ff6;
 	text-decoration: underline;
 }
 
-#titlecontent{
+#starwars-content #titlecontent{
 	position: absolute;
 	top: 100%;
 	-webkit-animation: scroll 50s linear 6.5s infinite; /*10s : Tiempo que se demora el texto pasar*/

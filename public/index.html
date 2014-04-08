@@ -3,11 +3,18 @@
 		<meta charset="UTF-8">
 		<title>Club Wars!</title>
 		<link rel="stylesheet" type="text/css" href="./css/starwars.css">
-		<link rel="stylesheet" type="text/css" href="./css/clubwars.css">
+		<link rel="stylesheet" type="text/css" href="css/galaxy.css" media="all" />
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/clubwars.css">
 	</head>
 	<body>
+		<div id="galaxy">
+			<div class="stars-back"></div>
+			<div class="stars-middle"></div>
+			<div class="stars-front"></div>
+		</div>
 		<div id="starwars-content">
+			<button id="skip">Saltar Intro</button>
 			<p id="start">Dentro de poco tiempo, en una Universidad muy, muy importante...</p>
 			<h1>
 				CLUB WARS
@@ -19,8 +26,8 @@
 						EPISODIO I
 						<br>2014 - Termino I
 					</p>	
-					<p>Es un evento unico.</p>	
-					<p>Es un evento de caracter masivo dirigido a mas de 1000 estudiantes de la ESPOL, donde se realizaran actividades de manera interactiva con el objetivo de orientarlos hacia una vida profesional mas alla del estudio, involucrandolos con el entorno a traves de clubes estudiantiles.</p>					
+					<p>Es un evento &uacute;nico.</p>	
+					<p>Es un evento de car&aacute;cter masivo dirigido a m&aacute;s de 1000 estudiantes de la ESPOL, donde se realizar&aacute;n actividades de manera interactiva con el objetivo de orientarlos hacia una vida profesional m&aacute;s all&aacute; del estudio, involucr&aacute;ndolos con el entorno a trav&eacute;s de clubes estudiantiles.</p>
 				</div>
 			</div>
 		</div>
@@ -39,16 +46,16 @@
 				        </div>
 				        <div class="collapse navbar-collapse">
 				          <ul class="nav navbar-nav navbar-right">
-				            <li class="active"><a href="#" id="btn_participantes">Participantes</a></li>
-				            <li><a href="#about" id="btn_auspiciantes">Auspiciantes</a></li>
-				            <li><a href="#contact">Contact</a></li>
+				            <li><a href="#" id="btn_participantes">Participantes</a></li>
+				            <li><a href="#about" id="btn_auspiciantes">Horarios</a></li>
+				            <li><a href="#contact">Lugar</a></li>
 				          </ul>
 				        </div><!--/.nav-collapse -->
 				      </div>
 				    </div>				
 			</header>
 			 <div class="container">
-				<div class="jumbotron" id="principal">
+			 	<div class="well" id="principal">
 					<div class="row">
 						<div class="col-md-6">
 							<img src="http://placehold.it/400x300" class="img-responsive img-thumbnail">
@@ -62,11 +69,50 @@
 							</div>
 						</div>-->
 						<div class="col-md-6">
-							<p class="bg-primary">...................................</p>
-							<p class="bg-success">...................................</p>
-							<p class="bg-info">.......................................</p>
-							<p class="bg-warning">..................................</p>
-							<p class="bg-danger">....................................</p>
+							<div class="panel-group" id="accordion">
+							  <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+							         ¿Qué es CLUB WARS?
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseOne" class="panel-collapse collapse in">
+							      <div class="panel-body">
+							        "CLUB WARS" ESPOL es un evento masivo, dirigido a los novatos, con el objetivo de orientarlos hacia una vida profesional más allá del estudio, involucrándolos con el entorno a través de clubes estudiantiles.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							          ¿En qué consiste?
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseTwo" class="panel-collapse collapse">
+							      <div class="panel-body">
+							        Los novatos tendrán que hacer equipos de 10 personas guiados durante toda la jornada por un sensei. El equipo debe realizar diferentes actividades lúdicas-interactivas en dos horas treinta minutos, conociendo así la importancia de pertenecer a clubes estudiantiles.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							          ¿Quiénes participaran?
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseThree" class="panel-collapse collapse">
+							      <div class="panel-body">
+							        En este evento participaran los alumnos novatos del primer término 2014 y los senseyes que se inscriban en el siguiente enlace: <a href="https://eventioz.com.ar/e/club-wars/registrations/new" target="_blank">Club Wars - Registro<a>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
 					<div class="row"><br></div>
@@ -90,73 +136,147 @@
 							<img src="http://placehold.it/100x100" class="img-responsive img-circle">
 						</div>
 					</div>
-				</div>
-				<div class="jumbotron" id="participantes">
-				<div class="container">
+			</div><!--Fin de principal-->
+			<div class="well" id="participantes">
 						<div class="row destacados">
-							<div class="col-md-4">
+							<div class="col-md-3">
 					    		<div>
-									<img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-									<h2>Diseño Web</h2>
-									<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+					    			<img src="./images/taws.png" class="img-circle img-thumbnail buzz" >
 								</div>
 							</div>
 
-							<div class="col-md-4">
+							<div class="col-md-3">
 								<div>
-									<img src="./images/powered.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
-									<h2>Desarrollo Web</h2>
-									<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+									<img src="./images/asme.png" class="img-circle img-thumbnail buzz">
 								</div>
 							</div>
 
-							<div class="col-md-4">
+							<div class="col-md-3">
 								<div>
-									<img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-									<h2>Alojamiento Web</h2>
-									<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+									<img src="./images/acp.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div>
+									<img src="./images/ashrae.png" class="img-circle img-thumbnail buzz">
 								</div>
 							</div>
 						</div>
-					</div>
-					
-				</div>			
+						<div class="row destacados">
+							<div class="col-md-3">
+					    		<div>
+					    			<img src="./images/au.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div>
+									<img src="./images/cde.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div>
+									<img src="./images/cdj.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div>
+									<img src="./images/ceme.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+						</div>
+						<div class="row destacados">
+							<div class="col-md-3">
+					    		<div>
+					    			<img src="./images/cfe.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div>
+									<img src="./images/ieee.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div>
+									<img src="./images/iie.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div>
+									<img src="./images/kokoa.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+						</div>
+						<div class="row destacados">
+							<div class="col-md-3">
+					    		<div>
+					    			<img src="./images/robota.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div>
+									<img src="./images/te.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div>
+									<img src="./images/tweening.png" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div>
+									<img src="http://placehold.it/100x100" class="img-circle img-thumbnail buzz">
+								</div>
+							</div>
+						</div>
+				</div><!--fin de participantes-->		
 			</div>
 			<div id="footer">
-		    <div class="container">
-		        <div class="row">
-		            <br>
-		              <div class="col-md-4">
-		                <center>
-		                  <img src="./images/facebook.png" width="25px"  alt="the-brains">
-		                  <br>
-		                  <h5 class="footertext">Facebook</h5>
-		                </center>
-		              </div>
-		              <div class="col-md-4">
-		                <center>
-		                  <p><center><a href="#">Escuela Superior Polit&eacute;cnica del Litoral</a> <p class="footertext">Copyright 2014</p></center></p>
-		                </center>
-		              </div>
-		              <div class="col-md-4">
-		                <center>
-		                  <img src="./images/powered.png" width="25px"  alt="...">
-		                  <br>
-		                  <h5 class="footertext">Desarrollado</h5>
-		                </center>
-		              </div>
-		            </div>
-		    </div>
-		</div>
+				    <div class="container">
+				        <div class="row">
+				            <br>
+				              <div class="col-md-4">
+				                <center>
+				                  <img src="./images/facebook.png" width="25px"  alt="the-brains">
+				                  <br>
+				                  <h5 class="footertext">Facebook</h5>
+				                </center>
+				              </div>
+				              <div class="col-md-4">
+				                <center>
+				                  <p><center><a href="#">Escuela Superior Polit&eacute;cnica del Litoral</a> <p class="footertext">Copyright 2014</p></center></p>
+				                </center>
+				              </div>
+				              <div class="col-md-4">
+				                <center>
+				                  <img src="./images/powered.png" width="25px"  alt="...">
+				                  <br>
+				                  <h5 class="footertext">Desarrollado</h5>
+				                </center>
+				              </div>
+				            </div>
+				    </div>
+				</div><!--fin de footer-->	
 		</div>
 		<script src="./js/jquery-2.0.3.min.js"></script>
 		<script src="./js/functions.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
 	</body>
 	<script type="text/javascript">
+		$("#participantes").hide();
 		$("#btn_participantes").click(function() {
 			$("#principal").hide();
 			$("#participantes").show('slow');
+		});
+	</script>
+	<script>
+	  $('#myTooltip').on('hidden.bs.tooltip', function () {
+		  alert('');
 		});
 	</script>
 </html>
