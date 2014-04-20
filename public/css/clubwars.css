@@ -19,7 +19,7 @@
 	background-color: black;
 	z-index: 10;
 }
-#clubwars-content header label{
+#clubwars-content header label {
 	font-size: 2.5em;
 	padding: 20px;
 }
@@ -52,6 +52,11 @@
 	padding-left: 2%;
 	background-color: rgba(0,0,0,0.7);
 }
+#clubwars-content section #logo { text-align: center; }
+#clubwars-content section #logo img{ 
+	width: 70%;
+	padding-bottom: 30px;
+}
 #clubwars-content section article img{
 	width: 23%; 
 	display: inline-block;
@@ -76,6 +81,7 @@
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-bottom: -5px;
 	border-top: 1px solid #ff6;
 	background-color: black;
 }
@@ -106,23 +112,6 @@
     border: 2px solid #ff6;
     border-radius: 35px;
     cursor: pointer;
-}
-#clubwars-content iframe{
-	margin-top: 30px;
-	width: 500px;
-	height: 500px;
-	border-radius: 250px;
-	text-align: center;
-	background-color: white;
-}
-#location{
-	width: 100%;
-	text-align:center;
-}
-#location iframe{
-	background-color: black;
-	width: 600px;
-	height: 450px;
 }
 
 .jornada{
